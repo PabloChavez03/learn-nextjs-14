@@ -148,7 +148,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
               aria-live="polite"
               className="mt-2 text-sm text-red-500"
             >
-                <p>Missing Fields. Failed to Create invoice</p>
+                <p>{state.message}</p>
             </div>
           ) : null}
       </div>
